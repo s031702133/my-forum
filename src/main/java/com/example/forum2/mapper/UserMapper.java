@@ -13,12 +13,14 @@ public interface UserMapper {
     int deleteByExample(UserExample example);
 
     int deleteByPrimaryKey(Integer userId);
-
+    //新增
     int insert(User record);
-
+    //新增判断是否为空
     int insertSelective(User record);
 
     List<User> selectByExample(UserExample example);
+
+    List<User> sjh(@Param("record")User record);
 
     User selectByPrimaryKey(Integer userId);
 

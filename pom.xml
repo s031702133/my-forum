@@ -78,6 +78,7 @@
             <version>3.7</version>
         </dependency>
 
+
         <!-- 腾讯云短信服务 -->
 <!--        <dependency>-->
 <!--            <groupId>com.github.qcloudsms</groupId>-->
@@ -112,10 +113,34 @@
             <!-- 特别注意版本问题 -->
             <version>1.2.3</version>
         </dependency>
+        <dependency>
+            <groupId>com.vaadin.external.google</groupId>
+            <artifactId>android-json</artifactId>
+            <version>0.0.20131108.vaadin1</version>
+            <scope>compile</scope>
+        </dependency>
+        <!--json-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.47</version>
+        </dependency>
 
     </dependencies>
 
     <build>
+        <!--配置资源拷贝插件-->
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+
+
+        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -132,5 +157,6 @@
             </plugin>
         </plugins>
     </build>
+
 
 </project>

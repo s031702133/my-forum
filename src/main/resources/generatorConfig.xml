@@ -33,8 +33,8 @@
         </javaModelGenerator>
 
         <!-- targetProject:mapper映射xml文件生成的位置，重要！！ -->
-        <sqlMapGenerator targetPackage="mybatis.mapper"
-                         targetProject=".\src\main\resources">
+        <sqlMapGenerator targetPackage="com.example.forum2.mapper"
+                         targetProject=".\src\main\java">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
@@ -49,7 +49,7 @@
         <table tableName="collect"></table>
         <table tableName="comment"></table>
         <table tableName="focus"></table>
-        <table tableName="like"></table>
+        <table tableName="_like"></table>
         <table tableName="tag"></table>
         <table tableName="topic"></table>
         <table tableName="user"></table>
